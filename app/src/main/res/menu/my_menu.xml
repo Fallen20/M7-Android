@@ -4,7 +4,12 @@
 
 
     <item
-        android:id="@+id/volumenIcon"
-        android:icon="@drawable/ic_baseline_volume_up_24"
+        android:id="@+id/photoMenu"
+        android:icon="@drawable/mas_photo_icono"
+        android:title="Item"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/gridMenu"
+        android:icon="@drawable/grid_icono"
         app:showAsAction="always" />
 </menu>

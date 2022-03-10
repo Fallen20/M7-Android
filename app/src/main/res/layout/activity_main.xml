@@ -4,43 +4,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:transitionName="logoTrans"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/logoMain"
-        android:layout_width="0dp"
-        android:layout_height="200dp"
-        android:transitionName="logoTrans"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+    <include
+        android:id="@+id/toolbarMain"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-    <RelativeLayout
+    <ImageView
+        android:id="@+id/imagenMain"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarMain"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/pedirAcceso"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenMain" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
-        app:layout_constraintTop_toTopOf="parent">
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <Button
-            android:id="@+id/One_playerMain"
+            android:id="@+id/camButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/colorBoton"
-            android:text="@string/playersOne"
-            android:translationX="-300dp" />
+            android:layout_marginRight="10dp"
+            android:text="@string/camaraPalabra" />
 
         <Button
-            android:id="@+id/Two_playerMain"
+            android:id="@+id/googleGalleryButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/One_playerMain"
-            android:layout_marginTop="30dp"
-            android:backgroundTint="@color/colorBoton"
-            android:text="@string/playersTwo"
-            android:translationX="300dp" />
-    </RelativeLayout>
+            android:layout_marginRight="10dp"
+            android:text="@string/fotosGogPalabra" />
+
+        <Button
+            android:id="@+id/galriaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/galeriaPalabra" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/uploadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/uploadPalabra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

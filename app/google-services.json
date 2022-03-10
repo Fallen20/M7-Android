@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "198751785924",
+    "project_id": "accesoappmovil-android",
+    "storage_bucket": "accesoappmovil-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198751785924:android:6124a713495feb5644ca91",
+        "android_client_info": {
+          "package_name": "com.example.accesoappmobil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198751785924-qhnk4v4vp5odm4ropgtv352fl673mt4r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBf6MJy67kzcXvXdKJ1msxF-GGGKm9nCig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198751785924-qhnk4v4vp5odm4ropgtv352fl673mt4r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

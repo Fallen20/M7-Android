@@ -1,26 +1,15 @@
 <resources>
-    <string name="app_name">SevenHalf</string>
-
-    <string name="playersOne">1 PLAYER</string>
-    <string name="playersTwo">2 PLAYERS</string>
-    <string name="newPalabra">NEW GAME</string>
-    <string name="resumePalabra">RESUME GAME</string>
-
-    <string name="bankJugadorPalabra">Bank: </string>
-    <string name="youPalabra">You: </string>
-    <string name="playPalabra">PLAY</string>
-    <string name="morePalabra">ONE MORE</string>
-    <string name="stopPalabra">STOP</string>
-    <string name="playAgainPalabra">PLAY AGAIN</string>
+    <string name="app_name">AccesoAppMobil</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
 
 
-    <string name="player1palabra">Player 1: </string>
-    <string name="player2palabra">Player 2: </string>
-    <string name="morePalabra1">ONE MORE 1</string>
-    <string name="morePalabra2">ONE MORE 2</string>
-    <string name="stopPalabra1">STOP 1</string>
-    <string name="stopPalabra2">STOP 2</string>
-    <string name="bankPalabra">Bank</string>
+    <string name="pedirAcceso">Pido acceso a...</string>
 
-    <string name="draw">It\'s a draw!</string>
+    <string name="camaraPalabra">Cámara</string>
+    <string name="fotosGogPalabra">Fotos Google</string>
+    <string name="galeriaPalabra">Galeria</string>
+    <string name="uploadPalabra">Upload</string>
+    <string name="deletePalabra">Delete</string>
+    <string name="dowloadPalabra">Download</string>
 </resources>
