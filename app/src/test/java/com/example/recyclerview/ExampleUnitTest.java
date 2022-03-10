@@ -1,4 +1,4 @@
-package com.example.sevenhalf;
+package com.example.recyclerview;
 
 import org.junit.Test;
 
