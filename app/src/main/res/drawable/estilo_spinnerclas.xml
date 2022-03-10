@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="10dp"></corners>
+            <padding android:right="10dp"></padding>
+
+            <gradient
+                android:endColor="@color/azul1"
+                android:startColor="@color/azul2"
+                android:type="linear"></gradient>
+        </shape>
+
+    </item>
+    <item>
+        <bitmap
+            android:src="@drawable/flecha_icon"
+            android:gravity="center|right"
+            android:tint="@color/azul3"/>
+    </item>
+
+</layer-list>
