@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    tools:context=".UnJugadorActivity">
+
+    <ImageView
+        android:id="@+id/logoNegativoTwoPlayer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:transitionName="logoTrans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.312"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.482"
+        app:srcCompat="@drawable/fondo_negativo" />
+
+    <LinearLayout
+        android:id="@+id/linearTop2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/scoreSuperior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280dp"
+            android:layout_marginBottom="-10dp"
+            android:text="Score:"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:padding="17dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/player1palabra"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/J1Ganados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/colorTxt"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/J2Palabra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/player2palabra"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/J2Ganados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/colorTxt"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/player2PuntuacionLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/logoNegativoTwoPlayer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/player2PuntuacionPalabra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="@string/player2palabra"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/player2Puntuacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/colorTxt"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cartasJug2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player2PuntuacionLinear">
+
+        <ImageView
+            android:id="@+id/carta1Jug2"
+            android:layout_width="80dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="29dp"
+            android:alpha="1"
+            android:scaleType="fitXY"
+            android:translationY="159dp" />
+
+        <ImageView
+            android:id="@+id/carta2Jug2"
+            android:layout_width="80dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="-30dp"
+            android:alpha="1"
+            android:scaleType="fitXY"
+            android:translationY="159dp" />
+
+        <ImageView
+            android:id="@+id/carta3Jug2"
+            android:layout_width="80dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="-30dp"
+            android:alpha="1"
+            android:scaleType="fitXY"
+            android:translationY="159dp" />
+
+        <ImageView
+            android:id="@+id/carta4Jug2"
+            android:layout_width="80dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="-30dp"
+            android:alpha="1"
+            android:scaleType="fitXY"
+            android:translationY="159dp" />
+
+        <ImageView
+            android:id="@+id/carta5Jug2"
+            android:layout_width="80dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="-30dp"
+            android:alpha="1"
+            android:scaleType="fitXY"
+            android:translationY="159dp" />
+
+        <ImageView
+            android:id="@+id/carta6Jug2"
+            android:layout_width="80dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="-30dp"
+            android:alpha="1"
+            android:scaleType="fitXY"
+            android:translationY="159dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/barajaCartas2J"
+            android:layout_width="80dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="false"
+            android:translationX="160dp"
+            android:translationY="330dp"
+            android:visibility="visible"
+            app:srcCompat="@drawable/pile" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/linearMiddle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/botonPlayInicial2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:backgroundTint="@color/colorBoton"
+            android:text="@string/playPalabra"
+            android:translationX="157dp"
+            android:translationY="370dp" />
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/cartasJug1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/carta1Jug1"
+            android:layout_width="80dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="29dp"
+            android:alpha="1"
+            android:scaleType="fitXY"
+            android:translationY="536dp" />
+
+        <ImageView
+            android:id="@+id/carta2Jug1"
+            android:layout_width="80dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="-30dp"
+            android:alpha="1"
+            android:scaleType="fitXY"
+            android:translationY="536dp" />
+
+        <ImageView
+            android:id="@+id/carta3Jug1"
+            android:layout_width="80dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="-30dp"
+            android:layout_weight="1"
+            android:alpha="1"
+            android:scaleType="fitXY"
+            android:translationY="536dp" />
+
+        <ImageView
+            android:id="@+id/carta4Jug1"
+            android:layout_width="80dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="-30dp"
+            android:layout_weight="1"
+            android:alpha="1"
+            android:scaleType="fitXY"
+            android:translationY="536dp" />
+
+        <ImageView
+            android:id="@+id/carta5Jug1"
+            android:layout_width="80dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="-30dp"
+            android:layout_weight="1"
+            android:alpha="1"
+            android:scaleType="fitXY"
+            android:translationY="536dp" />
+
+        <ImageView
+            android:id="@+id/carta6Jug1"
+            android:layout_width="80dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="-30dp"
+            android:layout_weight="1"
+            android:alpha="1"
+            android:scaleType="fitXY"
+            android:translationY="536dp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/topImagen"
+            android:layout_width="80dp"
+            android:layout_height="130dp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="-25dp"
+            android:alpha="0"
+            android:rotationY="180"
+            android:scaleType="fitXY"
+            android:visibility="visible"
+            app:srcCompat="@drawable/clubs01" />
+
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="80dp"
+            android:layout_height="130dp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="-25dp"
+            android:alpha="1"
+            android:scaleType="fitXY"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/imagenPlaceholderDobleJ1"
+            android:layout_width="80dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:translationY="228dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/imagenPlaceholderDobleJ2"
+            android:layout_width="80dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:translationY="-153dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/back" />
+
+        <RelativeLayout
+            android:id="@+id/dobleJ2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imagenDobleJ2"
+                android:layout_width="80dp"
+                android:layout_height="130dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="300dp"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/back" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/player1PuntuacionLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="680dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/logoNegativoTwoPlayer">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="@string/player1palabra"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/puntuacionPlayer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/colorTxt"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Player1Botones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="470dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/moreButtonPlayer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="160dp"
+            android:layout_weight="0"
+            android:backgroundTint="@color/colorBoton"
+            android:text="@string/morePalabra1"
+            android:translationX="-200dp" />
+
+        <Button
+            android:id="@+id/stopButtonPlayer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:backgroundTint="@color/colorBoton"
+            android:text="@string/stopPalabra1"
+            android:translationX="200dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Player2Botones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/moreButtonPlayer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="160dp"
+            android:layout_weight="0"
+            android:backgroundTint="@color/colorBoton"
+            android:text="@string/morePalabra2"
+            android:translationX="-200dp" />
+
+        <Button
+            android:id="@+id/stopButtonPlayer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:backgroundTint="@color/colorBoton"
+            android:text="@string/stopPalabra2"
+            android:translationX="200dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/buttonPlayAgain2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="60dp"
+            android:backgroundTint="@color/colorBoton"
+            android:text="@string/playAgainPalabra"
+            android:translationX="140dp"
+            android:translationY="340dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textoGanador2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/youPalabra"
+            android:textColor="@color/colorBoton"
+            android:textSize="22sp"
+            android:translationY="470dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/bank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="390dp"
+        android:foregroundGravity="right"
+        android:gravity="right"
+        android:text="@string/bankPalabra"
+        android:textColor="@color/colorBoton"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/toolbarTwoPlayer"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
