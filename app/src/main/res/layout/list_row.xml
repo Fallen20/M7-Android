@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="30dp"
+        android:padding="10dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tituloList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Refugi Josep Maria Blanc"
+                android:textColor="@color/verdeOsc"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tituloList"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:id="@+id/imagenList"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    app:srcCompat="@drawable/foto1" />
+
+                <LinearLayout
+                    android:id="@+id/linearInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/imagenList"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="false"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/imagenList"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tituloPeque"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Parc Aiguestortes"
+                        android:textColor="@color/aquamarina"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/lugar1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vall D'aran"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/lugar2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Catalunya"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/distancia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Distancia: 2:30h"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/desnivel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Desnivell: 1200m"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lineariconos"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/linearInfo"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right">
+
+                    <RelativeLayout
+                        android:id="@+id/info1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:srcCompat="@drawable/traingulo" />
+
+                        <TextView
+                            android:id="@+id/desnivelIcono"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@id/imageView2"
+                            android:gravity="right"
+                            android:text="2.100m"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/info2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/info1">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:srcCompat="@drawable/sofa" />
+
+                        <TextView
+                            android:id="@+id/cocheIcono"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="false"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@id/imageView3"
+                            android:gravity="right"
+                            android:text="30"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/info3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/info2">
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:srcCompat="@drawable/reloj" />
+
+                        <TextView
+                            android:id="@+id/relojIcono"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@id/imageView5"
+                            android:gravity="right"
+                            android:text="Open"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

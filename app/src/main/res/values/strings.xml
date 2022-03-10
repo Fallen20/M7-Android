@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Edt34</string>
+    <string name="txtGrande">Refugis</string>
+    <string name="txtPeque">Outdoor living</string>
+
+    <string name="nomPalabra">Nom</string>
+    <string name="cognomPalabra">Cognom</string>
+    <string name="emailPalabra">Email</string>
+    <string name="numPersonasPalabra">Número de persones</string>
+
+    <string name="PensionCompleta">Pensió Completa</string>
+    <string name="radioVegetariano">Vegetarià</string>
+    <string name="radioSinGluten">Sense Gluten</string>
+    <string name="radioCeliaco">Celiac</string>
+    <string name="radioNada">Cap</string>
+
+    <string name="entradaPalabra">Entrada</string>
+    <string name="salidaPalabra">Sortida</string>
+
+    <string name="reservarPalabra">RESERVAR</string>
+</resources>
