@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Edt27_parte2</string>
+
+    <string name="texto1Imagen1">Kyoto</string>
+    <string name="texto2Imagen1">La antigua capital del país</string>
+
+    <string name="texto1Imagen2">Yokohama</string>
+    <string name="texto2Imagen2">Famosa por sus barrios chinos</string>
+
+    <string name="texto1Imagen3">Tokio</string>
+    <string name="texto2Imagen3">La emblemática capital de Japón</string>
+
+    <string name="texto1Imagen4">Osaka</string>
+    <string name="texto2Imagen4">Ciudad portuaria con el famoso castillo de Osaka</string>
+
+    <string name="texto1Imagen5">Nara</string>
+    <string name="texto2Imagen5">El hogar de los ciervos</string>
+
+    <string name="telefono">+34 971 71 71</string>
+    <string name="reservarPalabra">RESERVAR</string>
+    <string name="enviarPalabra">ENVIAR</string>
+    <string name="nomPalabra">Nom</string>
+    <string name="cognomPalabra">Cognom</string>
+    <string name="emailPalabra">Email</string>
+    <string name="fechaEntrada">Introduce una fecha de entrada</string>
+    <string name="fechaSalida">Introduce una fecha de salida</string>
+</resources>
