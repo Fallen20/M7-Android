@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Edt02</string>
+    <string name="titulo">Pedals</string>
+    <string name="titulo2">Your Way of Travelling</string>
+
+    <string name="emailPalabra">Email</string>
+    <string name="passPalabra">Password</string>
+    <string name="namePalabra">Name</string>
+    <string name="BirthdatePalabra">Birthdate</string>
+
+
+    <string name="presentacion1">Hello there, Welcome back!</string>
+    <string name="presentacion2">Sign in to confirm</string>
+
+    <string name="forgot">Forgot password?</string>
+    <string name="logIn">LOG IN</string>
+    <string name="newUser">NEW USER SIGN UP</string>
+
+    <string name="titlPassword">Forgot password?</string>
+    <string name="subTitlPassword">We just need your registered email address to send you password reset</string>
+    <string name="resetPass">RESET PASSWORD</string>
+    
+    <string name="titSignUp">Hello there!</string>
+    <string name="subTitSignUp">Sign up to start</string>
+    <string name="recive">Recive Neswsletter?</string>
+    <string name="returnSignUp">ALREADY HAVE AN ACCOUNT</string>
+    <string name="signUpBoton">SIGN UP</string>
+
+
+    <string-array name="arrayBicis">
+        <item>MountainB Bike</item>
+        <item>Cycling Bike</item>
+        <item>Electric Bike</item>
+        <item>Road Bike</item>
+        <item>Folding Bike</item>
+        <item>Hybrid Bike</item>
+        <item>Touring Bike</item>
+    </string-array>
+</resources>
