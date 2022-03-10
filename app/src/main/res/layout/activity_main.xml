@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/layoutBicis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/biciCyan"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/bikeslogos1" />
+
+            <ImageView
+                android:id="@+id/biciAzul"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/bikeslogos2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearTop"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/biciRoja"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/bikeslogos3" />
+
+            <ImageView
+                android:id="@+id/biciNaranja"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/bikeslogos4" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imagenBG"
+        android:layout_width="wrap_content"
+        android:layout_height="1000dp"
+        android:scaleType="fitXY"
+        android:transitionName="FondoTrans"
+        android:translationY="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back4" />
+
+    <ImageView
+        android:id="@+id/biciBG"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imagenBG"
+        app:srcCompat="@drawable/logo_bici" />
+
+    <LinearLayout
+        android:id="@+id/linearBG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:gravity="center_horizontal"
+            android:text="www.bcnbikes.com"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Makes Life Easy"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iconoBici"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="500dp"
+        android:layout_marginTop="8dp"
+        android:transitionName="biciIconoTrans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_bici" />
+
+    <LinearLayout
+        android:id="@+id/linearIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:alpha="0"
+        android:orientation="vertical"
+        android:transitionName="textoIconoTrans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="Bcn Bikes"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Your way to travelling"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
