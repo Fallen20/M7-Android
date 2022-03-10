@@ -14,9 +14,9 @@
 
         <LinearLayout
             android:id="@+id/Arriba"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:orientation="horizontal">
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -24,11 +24,10 @@
                 android:layout_weight="1">
 
                 <ImageView
-                    android:id="@+id/blancoImg1"
+                    android:id="@+id/blanco"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:scaleType="fitXY"
-                    android:src="@drawable/cuadrado_blanco"
                     app:srcCompat="@drawable/cuadrado_blanco" />
 
                 <ImageView
@@ -37,7 +36,6 @@
                     android:layout_height="wrap_content"
                     android:alpha="0"
                     android:scaleType="fitXY"
-                    android:src="@drawable/sierra"
                     app:srcCompat="@drawable/sierra" />
 
                 <TextView
@@ -48,7 +46,7 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="10dp"
                     android:alpha="0"
-                    android:text="Arinsal"
+                    android:text="TextView"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -60,7 +58,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginBottom="10dp"
                     android:alpha="0"
-                    android:text="Parc Nacional Andorra" />
+                    android:text="TextView" />
 
                 <TextView
                     android:id="@+id/textImage1_3"
@@ -70,7 +68,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginBottom="10dp"
                     android:alpha="0"
-                    android:text="+34 971 71 71" />
+                    android:text="TextView" />
 
                 <Button
                     android:id="@+id/buttonImg1"
@@ -79,19 +77,15 @@
                     android:layout_below="@id/textImage1_3"
                     android:layout_marginLeft="30dp"
                     android:alpha="0"
-                    android:clickable="false"
                     android:onClick="intentClick"
-                    android:text="Button" />
+                    android:text="RESERVAR" />
 
                 <ImageView
                     android:id="@+id/image1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick="intentClick"
                     android:scaleType="fitXY"
-                    app:srcCompat="@drawable/sierra"
-                    tools:ignore="SpeakableTextPresentCheck" />
-
+                    app:srcCompat="@drawable/sierra" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -153,9 +147,10 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/textImage2_3"
                     android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:alpha="0"
                     android:onClick="intentClick"
-                    android:text="Button"
-                    android:alpha="0" />
+                    android:text="Button" />
 
                 <ImageView
                     android:id="@+id/image2"
@@ -168,23 +163,22 @@
 
         <LinearLayout
             android:id="@+id/Medio"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_below="@id/Arriba"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/Arriba"
             android:orientation="vertical">
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1">
 
                 <ImageView
-                    android:id="@+id/imageView3"
-                    android:layout_width="match_parent"
+                    android:id="@+id/blancoImg3"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:scaleType="fitXY"
-                    app:srcCompat="@drawable/alrgado_horizontalcentro_blanco" />
+                    app:srcCompat="@drawable/alrgado_verticalcentro_blanco" />
 
                 <ImageView
                     android:id="@+id/image3Back"
@@ -192,27 +186,26 @@
                     android:layout_height="wrap_content"
                     android:alpha="0"
                     android:scaleType="fitXY"
-                    app:srcCompat="@drawable/cuadrado_horizontal" />
+                    app:srcCompat="@drawable/cuadrado_vertical" />
 
                 <TextView
                     android:id="@+id/textImage3_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="60dp"
                     android:layout_marginBottom="10dp"
                     android:alpha="0"
                     android:text="TextView"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/textImage3_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/textImage3_1"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="10dp"
                     android:alpha="0"
                     android:text="TextView" />
 
@@ -221,21 +214,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/textImage3_2"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="10dp"
                     android:alpha="0"
                     android:text="TextView" />
 
                 <Button
                     android:id="@+id/buttonImg3"
-                    android:layout_width="100dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/textImage3_3"
-                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="35dp"
                     android:alpha="0"
                     android:onClick="intentClick"
-                    android:text="RESERVAR"
-                    android:textSize="12sp" />
+                    android:text="Button" />
 
                 <ImageView
                     android:id="@+id/image3"
@@ -243,7 +235,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:scaleType="fitXY"
-                    app:srcCompat="@drawable/cuadrado_horizontal" />
+                    app:srcCompat="@drawable/cuadrado_vertical" />
             </RelativeLayout>
 
         </LinearLayout>
@@ -252,8 +244,8 @@
             android:id="@+id/Abajo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/Medio"
-            android:orientation="horizontal">
+            android:layout_toEndOf="@id/Medio"
+            android:orientation="vertical">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -261,20 +253,19 @@
                 android:layout_weight="1">
 
                 <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/cuadrado_blanco" />
+
+                <ImageView
                     android:id="@+id/blancoImg4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:alpha="0"
                     android:scaleType="fitXY"
-                    app:srcCompat="@drawable/alargado_vertical_blanco" />
-
-                <ImageView
-                    android:id="@+id/image4Back"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:alpha="0"
-                    android:scaleType="fitXY"
-                    app:srcCompat="@drawable/cubo_alargado" />
+                    app:srcCompat="@drawable/cubo_cuadrado" />
 
                 <TextView
                     android:id="@+id/textImage4_1"
@@ -305,8 +296,8 @@
                     android:layout_below="@id/textImage4_2"
                     android:layout_marginLeft="20dp"
                     android:layout_marginBottom="10dp"
-                    android:text="TextView"
-                    android:alpha="0" />
+                    android:alpha="0"
+                    android:text="TextView" />
 
                 <Button
                     android:id="@+id/buttonImg4"
@@ -314,6 +305,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/textImage4_3"
                     android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
                     android:alpha="0"
                     android:onClick="intentClick"
                     android:text="Button" />
@@ -323,7 +315,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
-                    app:srcCompat="@drawable/cubo_alargado" />
+                    app:srcCompat="@drawable/cubo_cuadrado" />
 
             </RelativeLayout>
 
@@ -333,12 +325,11 @@
                 android:layout_weight="1">
 
                 <ImageView
-                    android:id="@+id/blancoImg5"
+                    android:id="@+id/imageView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:alpha="1"
                     android:scaleType="fitXY"
-                    app:srcCompat="@drawable/alargado_vertical_blanco" />
+                    app:srcCompat="@drawable/cuadrado_blanco" />
 
                 <ImageView
                     android:id="@+id/image5Back"
@@ -346,7 +337,7 @@
                     android:layout_height="wrap_content"
                     android:alpha="0"
                     android:scaleType="fitXY"
-                    app:srcCompat="@drawable/redonda_alargada" />
+                    app:srcCompat="@drawable/redonda_cuadrada" />
 
                 <TextView
                     android:id="@+id/textImage5_1"
@@ -355,10 +346,10 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="10dp"
-                    android:alpha="0"
                     android:text="TextView"
                     android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:alpha="0" />
 
                 <TextView
                     android:id="@+id/textImage5_2"
@@ -386,6 +377,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/textImage5_3"
                     android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="10dp"
                     android:alpha="0"
                     android:onClick="intentClick"
                     android:text="Button" />
@@ -395,7 +387,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="fitXY"
-                    app:srcCompat="@drawable/redonda_alargada" />
+                    app:srcCompat="@drawable/redonda_cuadrada" />
             </RelativeLayout>
         </LinearLayout>
 
