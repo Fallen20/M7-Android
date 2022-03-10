@@ -1,26 +1,51 @@
 <resources>
-    <string name="app_name">SevenHalf</string>
+    <string name="app_name">Edt73</string>
+    <string name="titulo">Body Mass</string>
 
-    <string name="playersOne">1 PLAYER</string>
-    <string name="playersTwo">2 PLAYERS</string>
-    <string name="newPalabra">NEW GAME</string>
-    <string name="resumePalabra">RESUME GAME</string>
+    <string name="RelativeFatMass">Fat Mass</string>
+    <string name="WanVael">Wan Vael</string>
+    <string name="Lorentz">Lorentz</string>
+    <string name="Creff">Creff</string>
 
-    <string name="bankJugadorPalabra">Bank: </string>
-    <string name="youPalabra">You: </string>
-    <string name="playPalabra">PLAY</string>
-    <string name="morePalabra">ONE MORE</string>
-    <string name="stopPalabra">STOP</string>
-    <string name="playAgainPalabra">PLAY AGAIN</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="Calculate">CALCULATE</string>
+    <string name="small">Small</string>
+    <string name="medium">Medium</string>
+    <string name="Broad">Broad</string>
+
+    <string name="height">Height (cm)</string>
+    <string name="waist">Waist circumference (cm)</string>
+    <string name="age">Age (in years)</string>
+
+    <string name="tablaTit0">Interpretation</string>
+    <string name="tablaInt1">Extremly low level of fat</string>
+    <string name="tablaInt2">Essential fat</string>
+    <string name="tablaInt3">Athletes</string>
+    <string name="tablaInt4">Fitness</string>
+    <string name="tablaInt5">Average</string>
+    <string name="tablaInt6">Obese</string>
+
+    <string name="tablaTit1">Men (%)</string>
+    <string name="tablaMen1"><![CDATA[<2]]></string>
+    <string name="tablaMen2">2 - 5</string>
+    <string name="tablaMen3">6 - 13</string>
+    <string name="tablaMen4">14 - 17</string>
+    <string name="tablaMen5">18 - 24</string>
+    <string name="tablaMen6">25+</string>
 
 
-    <string name="player1palabra">Player 1: </string>
-    <string name="player2palabra">Player 2: </string>
-    <string name="morePalabra1">ONE MORE 1</string>
-    <string name="morePalabra2">ONE MORE 2</string>
-    <string name="stopPalabra1">STOP 1</string>
-    <string name="stopPalabra2">STOP 2</string>
-    <string name="bankPalabra">Bank</string>
+    <string name="tablaTit2">Women (%)</string>
+    <string name="tablaWoMen1"><![CDATA[<10]]></string>
+    <string name="tablaWoMen2">10 - 13</string>
+    <string name="tablaWoMen3">14 - 20</string>
+    <string name="tablaWoMen4">21 - 24</string>
+    <string name="tablaWoMen5">25 - 31</string>
+    <string name="tablaWoMen6">32+</string>
 
-    <string name="draw">It\'s a draw!</string>
+    <string name="negativo">No se pueden meter numeros negativos</string>
+    <string name="falta">Faltan datos</string>
+    <string name="faltaRadio">No se ha seleccionado ningún radio</string>
+
+
 </resources>
