@@ -4,43 +4,98 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:transitionName="logoTrans"
+    android:background="@color/lightOrange"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/logoMain"
-        android:layout_width="0dp"
-        android:layout_height="200dp"
-        android:transitionName="logoTrans"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
-
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
+        android:layout_height="match_parent"
         android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/One_playerMain"
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/colorBoton"
-            android:text="@string/playersOne"
-            android:translationX="-300dp" />
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="List y  grid con texto"
+            android:textColor="@color/letrasOsc"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <Button
-            android:id="@+id/Two_playerMain"
+            android:id="@+id/list1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/One_playerMain"
-            android:layout_marginTop="30dp"
-            android:backgroundTint="@color/colorBoton"
-            android:text="@string/playersTwo"
-            android:translationX="300dp" />
-    </RelativeLayout>
+            android:backgroundTint="@color/Orange"
+            android:elevation="10dp"
+            android:text="ListView con texto + myMenu"
+            android:textColor="@color/lightYellow" />
+
+        <Button
+            android:id="@+id/grid1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/Orange"
+            android:elevation="10dp"
+            android:text="gridview con texto + menu java"
+            android:textColor="@color/lightYellow" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="List y grid con imágenes"
+            android:textColor="@color/letrasOsc"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/list2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/Orange"
+            android:elevation="10dp"
+            android:text="Listview con imágenes"
+            android:textColor="@color/lightYellow" />
+
+        <Button
+            android:id="@+id/grid2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/Orange"
+            android:elevation="10dp"
+            android:text="Gridview con imágenes"
+            android:textColor="@color/lightYellow" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Listview con clase"
+            android:textColor="@color/letrasOsc"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/listBu3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/Orange"
+            android:elevation="10dp"
+            android:text="Listview con class"
+            android:textColor="@color/lightYellow" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
