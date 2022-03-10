@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeBGRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/relatibr111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relativeRowIzq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/rowImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/rowCriticsPalabra"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rowImage"
+                android:layout_marginTop="5dp"
+                android:text="@string/criticsPalabra"
+                android:textColor="@color/grisLetra" />
+
+            <TextView
+                android:id="@+id/critic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rowImage"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/rowCriticsPalabra"
+                android:text="TextView"
+                android:textColor="@color/azul" />
+
+            <TextView
+                android:id="@+id/rowRatingPalabra"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/critic"
+                android:layout_marginTop="2dp"
+                android:text="@string/ratingPalabra"
+                android:textColor="@color/grisLetra" />
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/critic"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/rowRatingPalabra"
+                android:text="TextView"
+                android:textColor="@color/rojo" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/botonWeb"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativeRowIzq"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/grisBoton"
+            android:text="@string/urlPalabra"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/relatibr111">
+
+        <TextView
+            android:id="@+id/rowTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Titulo"
+            android:textColor="@color/grisLetra"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rowHeadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rowTitulo"
+            android:layout_marginTop="2dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/rowDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rowHeadline"
+            android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,26 +1,30 @@
 <resources>
-    <string name="app_name">SevenHalf</string>
+    <string name="app_name">newYorkAPI</string>
 
-    <string name="playersOne">1 PLAYER</string>
-    <string name="playersTwo">2 PLAYERS</string>
-    <string name="newPalabra">NEW GAME</string>
-    <string name="resumePalabra">RESUME GAME</string>
+    <string name="select">Select a theme</string>
+    <string name="enter">Enter the text to search in the API</string>
+    <string name="selectTxt">Select the text to search in the API</string>
 
-    <string name="bankJugadorPalabra">Bank: </string>
-    <string name="youPalabra">You: </string>
-    <string name="playPalabra">PLAY</string>
-    <string name="morePalabra">ONE MORE</string>
-    <string name="stopPalabra">STOP</string>
-    <string name="playAgainPalabra">PLAY AGAIN</string>
+    <string name="reviewPalabra">Review</string>
+    <string name="topStoriesPalabra">Top Stories</string>
+    <string name="statusPalabra">Status: </string>
+    <string name="NumResultsPalabra">Num. Results: </string>
+    <string name="criticsPalabra">Critics: </string>
+    <string name="ratingPalabra">Rating: </string>
+    <string name="urlPalabra">See in web</string>
+    <string name="sectionPalabra">Section: </string>
+    <string name="subsectionPalabra">Subsection: </string>
 
+    <string name="wordToSearch">Word to search</string>
+    <string name="bad">BAD</string>
+    <string name="publication">Publication date: </string>
+    <string name="opening">Opening date: </string>
+    <string name="update">Date updated: </string>
 
-    <string name="player1palabra">Player 1: </string>
-    <string name="player2palabra">Player 2: </string>
-    <string name="morePalabra1">ONE MORE 1</string>
-    <string name="morePalabra2">ONE MORE 2</string>
-    <string name="stopPalabra1">STOP 1</string>
-    <string name="stopPalabra2">STOP 2</string>
-    <string name="bankPalabra">Bank</string>
+    <string name="topStories">Top Stories</string>
+    <string name="movies">Movies</string>
+    <string name="noDesc">No description provided</string>
+    <string name="noSection">No section provided</string>
+    <string name="copySymbol">(C)</string>
 
-    <string name="draw">It\'s a draw!</string>
 </resources>
