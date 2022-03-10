@@ -1,10 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
-
-
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/upload"
+            android:icon="@drawable/addpost_icon"
+            android:title="@string/upload" />
+        <item
+            android:id="@+id/mensajes"
+            android:icon="@drawable/message_icon"
+            android:title="@string/mensaje" />
+        <item
+            android:id="@+id/localizacion"
+            android:icon="@drawable/location_icon"
+            android:title="@string/location" />
+    </group>
     <item
-        android:id="@+id/volumenIcon"
-        android:icon="@drawable/ic_baseline_volume_up_24"
-        app:showAsAction="always" />
+        android:id="@+id/subMenu"
+        android:title="@string/menuTit1">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/perfil"
+                    android:icon="@drawable/user_icon"
+                    android:title="@string/profile" />
+                <item
+                    android:id="@+id/settings"
+                    android:icon="@drawable/settings_icon"
+                    android:title="@string/settings" />
+                <item
+                    android:id="@+id/salir"
+                    android:icon="@drawable/salir_icon"
+                    android:title="@string/exit" />
+            </group>
+        </menu>
+    </item>
 </menu>

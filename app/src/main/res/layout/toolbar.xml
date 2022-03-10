@@ -4,9 +4,9 @@
     android:id="@+id/toolbarOriginal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/colorBoton"
+    android:background="@color/teal_200"
     android:elevation="4dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-    app:navigationIcon="@drawable/ic_menu_hamburgesa">
+    app:navigationIcon="@drawable/menu_icon">
 
 </androidx.appcompat.widget.Toolbar>
