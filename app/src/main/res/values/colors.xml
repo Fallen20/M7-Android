@@ -8,9 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-
-    <color name="colorBoton">#BF880A</color>
-    <color name="colorTxt">#906504</color>
-    <color name="colorBotonOsc">#886108</color>
-    <color name="bg">#0B0B0B</color>
+<!--    -->
+    <color name="rojo">#a61010</color>
+    <color name="rojo2">#630b0b</color>
+    <color name="gris">#cacaca</color>
 </resources>

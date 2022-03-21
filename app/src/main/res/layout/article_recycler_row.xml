@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeArticleRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imagenArticleRow"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/tituloArticleRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="7dp"
+        android:layout_toRightOf="@id/imagenArticleRow"
+        android:text="TextView"
+        android:textColor="@color/rojo2"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/descArticleRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tituloArticleRow"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="7dp"
+        android:layout_toRightOf="@id/imagenArticleRow"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/fechaArticleRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descArticleRow"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/imagenArticleRow"
+        android:text="TextView"
+        android:textColor="@color/rojo" />
+</RelativeLayout>
